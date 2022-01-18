@@ -147,7 +147,6 @@ int main(int, char**)
     // color to be something OTHER than red
 
     glTexImage2D(GL_TEXTURE_2D, 0, texture_channel_format, tex_w, tex_h, 0, texture_channel_format, GL_UNSIGNED_BYTE, texture_data_buffer);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, tex_w, tex_h, 0, GL_RGB, GL_UNSIGNED_BYTE, texture_data_buffer);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR );
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     glBindTexture(GL_TEXTURE_2D, 0);
